@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en">
+  <head>	
+	<title>Web Content Manager ČSOB - Zadanie</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+	<style type="text/css">
+		body {
+			font-family: "MuseoSans", Arial, Helvetica, sans-serif;
+		}
+		
+		h2, h5, h6, p {
+			color: #013368;
+		}
+		
+		.btn-blue {
+			background-color: #0099cc; 
+			border-color: #0099cc; 
+			color: #ffffff;
+		}
+		
+		.btn-blue:hover {
+			background-color: #007aa3;
+			border-color: #007aa3;
+			color: #ffffff;
+		}
+		
+		.btn-blue:focus {
+			background-color: green;
+		}
+		
+		.btn-gray {
+			background-color: #D6D6D6;
+			border-color: #D6D6D6;
+			color: #B1B1B1;
+		}
+		
+		.card {
+			border-radius: 0.4rem; 
+			max-width: 310px; 
+			height: auto;
+			box-shadow: 0px 7px 16px -4px rgba(0,0,0,0.31);			
+		}
+		
+		.hr-text {
+			display: flex;
+			flex-basis: 100%;
+			align-items: center;
+			color: #013368;
+			margin: 8px 0px;
+			font-size: 13px;			
+		}
+		.hr-text:before,
+		.hr-text:after {
+			content: "";
+			flex-grow: 1;
+			background: rgba(0, 0, 0, 0.2);
+			height: 1px;
+			font-size: 0px;
+			line-height: 0px;
+		}
+	</style>
+	<script type="text/javascript">
+		function changeTextAndColor(){
+			var btn = document.getElementById("button");
+			btn.innerHTML = 'Modal opened';
+			btn.style.backgroundColor = "green";
+		}		
+	</script>
+		
+  </head>
+  <body>
+<body>
+
+<div class="container">
+	<h2 class="mb-5" style="letter-spacing: -0.02em;"><small><strong>Spend your time before departure in comfort and privacy of airport lounges</strong></small></h2>
+
+	<div class="row">
+		<div class="col-12 col-lg-6 my-auto">
+			<div class="row">
+				<div class="col-6 col-md-3 col-lg-6">
+					<div class="text-center my-lg-4 mx-3">
+						<img src="seat.jpg" alt="seat" width="47" height="52">
+						<h6 class="mt-4 mb-2"><strong>Comfort and Privacy</strong></h6>
+						<p class="pt-1" style="font-size: 11px;">The airport lounge areas make zour wait for your flight more pleasant and provide you with a higher degree of privacy and safety</p>
+					</div>
+				</div>	
+				
+				<div class="col-6 col-md-3 col-lg-6">
+					<div class="text-center my-lg-4 mx-3">				
+						<img src="seat.jpg" alt="seat" width="47" height="52">
+						<h6 class="mt-4 mb-2"><strong>Refreshments</strong></h6>
+						<p class="pt-1" style="font-size: 11px;">Option to refresh yourself with a buffet and a wide range of alcoholic and non-alcoholic beverages.</p>
+					</div>
+				</div>	
+				
+				<div class="col-6 col-md-3 col-lg-6">
+					<div class="text-center my-lg-4 mx-3">	
+						<img src="seat.jpg" alt="seat" width="47" height="52">
+						<h6 class="mt-4 mb-2"><strong>News and Business</strong></h6>
+						<p class="pt-1" style="font-size: 11px;">Choose from press, buseiness areas with Wi-Fi and the possibility of meeting with business partners.</p>
+					</div>
+				</div>	
+				
+				<div class="col-6 col-md-3 col-lg-6">
+					<div class="text-center my-lg-4 mx-3">	
+						<img src="seat.jpg" alt="seat" width="47" height="52">
+						<h6 class="mt-4 mb-2"><strong>Additional benefits</strong></h6>
+						<p class="pt-1" style="font-size: 11px;">Priority and separate passages through security checks and other benefits according to the airport.</p>
+					</div>
+				</div>	
+			</div>
+		</div>
+		<div class="col-12 col-md-6 d-md-none d-lg-block my-auto">		
+			<img src="Key_555x416.jpg" alt="airport lounge" style="max-width: 100%; height: auto;">
+		</div>
+	</div>
+
+	<p class="mt-2 mt-lg-5 mb-4" style="font-size: 15px; letter-spacing: -0.02em;"><strong>Comfort program</strong> gives the holder of the selected ČSOB card the right to enter airport lounges. The fee of the entry itself in the amount of € 28 for the cardholder or any accompanying person is charged</p>
+	
+	<button type="button" id="button" class="btn btn-blue px-4 my-2" style="border-radius: 10em;" onclick="changeTextAndColor()" data-toggle="modal" data-target=".bd-example-modal-sm">Open modal</button>
+
+	<div class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+	  <div class="modal-dialog modal-sm">
+		<div class="modal-content">
+			<div class="modal-header">
+			<h5 class="modal-title">The Comfort program</h5>
+			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			  <span aria-hidden="true">&times;</span>
+			</button>
+		  </div>
+		  <div class="modal-body">
+			</p><strong>Comfort program</strong> gives the holder of the selected ČSOB card the right to enter airport lounges. The fee of the entry itself in the amount of € 28 for the cardholder or any accompanying person is charged<p>
+		  </div>
+		  <div class="modal-footer">
+			<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+		  </div>
+		</div>
+	  </div>
+	</div>
+	
+	<button type="button" class="btn btn-gray mx-3 px-4 my-2" style="border-radius: 10em;" disabled>Disabled</button>
+	
+	<a href="" style="color: #0099cc;"><u>More info</u></a>
+
+	<h2 class="mt-4 pb-2" style="letter-spacing: -0.02em;"><small><strong>The Comfort program is free part of the following ČSOB payment card</strong></small></h2>
+
+	<div class="mt-4" style="display: flex;">
+		<div class="card p-2 mb-5 mr-3 bg-white border-0">
+			<img src="k1.jpg" class="mb-3" alt="visa infinite card" style="max-width: 100%; height: auto;">
+			<h5 class="my-2"><strong>VISA</strong></h5>
+			<p class="mb-4" style="font-size: 15px; letter-spacing: -0.02em;">Debit card for Private Banking clients</p>
+		</div>
+		
+		<div class="card p-2 mb-5 mr-3 bg-white border-0">
+			<img src="k1.jpg" class="mb-3" alt="visa infinite card" style="max-width: 100%; height: auto;">
+			<h5 class="my-2"><strong>VISA GOLD</strong></h5>
+			<p class="mb-4" style="font-size: 15px; letter-spacing: -0.02em;">Debit card for Private Banking clients</p>
+		</div>
+	</div>
+	
+	<div class="hr-text pb-3">
+		<div class="mx-3">
+			Corporate credit and charge cards
+		</div>
+	</div>
+
+	<div class="mt-4" style="display: flex;">
+		<div class="card p-2 mb-5 mr-3 bg-white border-0">
+			<img src="k1.jpg" class="mb-3" alt="visa infinite card" style="max-width: 100%; height: auto;">
+			<h5 class="my-2"><strong>VISA Credit</strong></h5>
+			<div class="mb-4"><br></div>
+		</div>
+		
+		<div class="card p-2 mb-5 mr-3 bg-white border-0">
+			<img src="k1.jpg" class="mb-3" alt="visa infinite card" style="max-width: 100%; height: auto;">
+			<h5 class="my-2"><strong>VISA Charge</strong></h5>
+			<div class="mb-4"><br></div>
+		</div>
+		
+		<div class="card p-2 mb-5 mr-3 bg-white border-0">
+			<img src="k1.jpg" class="mb-3" alt="visa infinite card" style="max-width: 100%; height: auto;">
+			<h5 class="my-2"><strong>VISA GOLD Charge</strong></h5>
+			<div class="mb-4"><br></div>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-12 col-md-6 mb-3">
+			<h2 class="my-4 pb-2" style="letter-spacing: -0.02em;"><small><strong>Aditional useful information about Comfort</strong></small></h2>
+			<div class="border bg-white d-flex p-3 my-3" style="border-radius: 0.4rem;">
+				<img src="inf.svg" alt="bulb" width="22" height="22">
+				<p class="m-0 pl-3" style="font-size: 13px; letter-spacing: -0.02em;">Comfort website - thanks to registration, you will get clear information about your visits to airport lounges and more digital card option. <strong>You will get clear information information about your visits to airport.</strong>
+				<br>
+				<a href="" style="color: #0099cc;">Go to page</a></p>
+			</div>
+			<div class="border bg-white d-flex p-3 my-3" style="border-radius: 0.4rem;">				
+				<img src="inf.svg" alt="bulb" width="22" height="22">
+				<p class="m-0 pl-3" style="font-size: 13px; letter-spacing: -0.02em;">More than 1300 airport lounges in 500 cities in 130 states.
+				<br>
+				<a href="" style="color: #0099cc;">List of lounges</a></p>
+			</div>
+		</div>
+		<div class="col-12 col-md-6 mb-3">
+			<h2 class="my-4 pb-2" style="letter-spacing: -0.02em;"><small><strong>Mobile applications for your better overview</strong></small></h2>
+			<a href=""><img src="button-bran-google-play.svg" alt="Google Play button" width="161" height="48"></a>
+			<a href=""><img src="button-bran-apple-store.svg" alt="App Store button" width="161" height="48"></a>
+		</div>
+	</div>	
+</div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
